@@ -1,0 +1,7 @@
+{
+  "name": "BestIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
