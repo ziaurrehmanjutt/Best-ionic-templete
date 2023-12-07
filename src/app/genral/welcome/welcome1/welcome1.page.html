@@ -1,13 +1,95 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>welcome1</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">welcome1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+
+  <swiper-container [config]="config" #swiper initial-slide="0" navigation="true" pagination="true" scrollbar="true">
+    <swiper-slide>
+
+      <div class="slide-content">
+        <h1>Welcome to MyApp</h1>
+        <p>Unleash the power of innovation with our cutting-edge mobile experience.</p>
+        <div class="ion-text-center">
+          <ion-icon name="rocket-outline"></ion-icon>
+        </div>
+      </div>
+
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="slide-content">
+        <h1>Explore Hundreds of Components</h1>
+        <p>Discover a rich collection of UI components and pages to enhance your app's design and functionality.</p>
+        <div class="ion-text-center">
+          <ion-icon name="apps-outline"></ion-icon>
+        </div>
+      </div>
+    </swiper-slide>
+
+    <!-- Third Slide -->
+    <swiper-slide>
+      <div class="slide-content">
+        <h1>Customize Settings with Ease</h1>
+        <p>Access the side menu to change settings such as theme, dark mode, language (including RTL support), and more.
+        </p>
+        <div class="ion-text-center">
+          <ion-icon name="settings-outline"></ion-icon>
+        </div>
+      </div>
+    </swiper-slide>
+
+    <!-- Sixth Slide -->
+    <swiper-slide>
+      <div class="slide-content">
+        <h1>Explore Diverse UI Pages</h1>
+        <p>Discover a variety of UI pages, including common ones like Login and Register, as well as complete apps such
+          as Grocery and Library. Jump Start your app development with our pre-designed templates.</p>
+        <div class="ion-text-center">
+          <ion-icon name="desktop-outline"></ion-icon>
+        </div>
+      </div>
+    </swiper-slide>
+
+    <!-- Seventh Slide -->
+    <swiper-slide>
+      <div class="slide-content">
+        <h1>Master Ionic Features</h1>
+        <p>Efficiently utilize core Ionic features for your app, including API calls, loading indicators, toasts, file
+          uploads, and more. Elevate your app's functionality with tried-and-true Ionic methods.</p>
+        <div class="ion-text-center">
+          <ion-icon name="settings-outline"></ion-icon>
+        </div>
+      </div>
+    </swiper-slide>
+
+
+    <swiper-slide>
+      <div class="slide-content">
+        <h1>Ready to Dive In?</h1>
+        <p>Explore the endless possibilities and unleash your creativity with our powerful app development tools.</p>
+        <ion-icon name="play-circle-outline"></ion-icon>
+        <ion-button expand="full" shape="round" (click)="startApp()">Start App</ion-button>
+        <ion-item lines="none">
+          <ion-checkbox [(ngModel)]="doNotShowAgain"></ion-checkbox>
+          <ion-label>Don't show again</ion-label>
+        </ion-item>
+      </div>
+    </swiper-slide>
+
+  </swiper-container>
+
+
+  <!-- <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <div class="swiper-pagination"></div>
+  
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <div class="swiper-scrollbar"></div>
+  </div> -->
+
 </ion-content>

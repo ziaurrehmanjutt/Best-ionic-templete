@@ -1,0 +1,44 @@
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+swiper-slide {
+    width: 360px;
+    height: 100%;
+    // background: #273a4e;
+    padding: 20px;
+}
+
+swiper-container {
+    height: 100%;
+}
+
+
+.slide-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        // color: #fff;
+        /* Text color */
+    }
+
+    p {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+        // color: #fff;
+        /* Text color */
+    }
+
+    ion-icon {
+        font-size: 3em;
+        // color: #fff;
+        /* Icon color */
+    }
+}

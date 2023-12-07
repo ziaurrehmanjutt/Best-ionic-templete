@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -15,6 +15,7 @@ import { Welcome1Page } from './welcome1.page';
     IonicModule,
     Welcome1PageRoutingModule
   ],
-  declarations: [Welcome1Page]
+  declarations: [Welcome1Page],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class Welcome1PageModule {}
